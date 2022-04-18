@@ -79,10 +79,17 @@ int main() {
             stateWinner(state);
             break;
         }
-        if (++round == 9) break;
+        if (++round == 9) {
+            cout << "DRAW.\n";
+            break;
+        }
         onX = !onX;
     }
     cout << "Thanks for playing.\n";
+
+    cout << "[Press ANY Key to exit]";
+    int x;
+    cin >> x;
 }
 
 void stateWinner(int state) {
