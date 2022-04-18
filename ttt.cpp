@@ -75,6 +75,7 @@ int main() {
 
         int state = checkState(board);
         if (state != 0) {
+            printBoard(board);
             stateWinner(state);
             break;
         }
